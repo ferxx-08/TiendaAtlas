@@ -1,6 +1,8 @@
-import app from "./app"; //Equivale al codigo que esta en app
-import './database';
-import { PORT } from "./config";
+import app from "./app.js"; //Equivale al codigo que esta en app
+import './database.js';
+import { PORT } from "./config.js";
+import 'regenerator-runtime/runtime';
+
 
 app.listen(PORT)
 console.log('Servidor en puerto', PORT)
