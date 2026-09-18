@@ -1,0 +1,37 @@
+<div class="card card-body p-4 rounded-3 bg-secondary text-light shadow-sm">
+<h4 class="mb-3 border-bottom pb-2">Agregar Clientes</h4>
+<form action="/clientes/agregar" method="post">
+    <div>
+        <label for="nombre">Escribe tu nombre: </label>
+        <input type="text" name="nombre" id="nombre"
+        class="form-control bg-light text-dark border-0"/>
+    </div><br><br>
+    <div>
+        <label for="apellido">Escribe tu apellido: </label>
+        <input type="text" name="apellido" id="apellido"
+        class="form-control bg-light text-dark border-0"/>
+    </div><br><br>
+    <div>
+        <label for="correo">Escribe tu correo: </label>
+        <input type="email" name="correo" id="correo"
+        class="form-control bg-light text-dark border-0"/>
+    </div><br><br>
+    <div>
+        <label for="telefono">¿Cual es tu numero telefono?:</label>
+        <input type="text" name="telefono" id="telefono"
+        class="form-control bg-light text-dark border-0"/>
+    </div><br><br>
+    <div>
+       <label for="direccion">Escribe tu direccion: </label>
+       <textarea name="direccion" cols="25" rows="5" placeholder="Adress"
+       class="form-control bg-light text-dark border-0"></textarea>
+    </div><br><br>
+    <div>
+        <label for="edad">Escribe tu edad: </label>
+        <input type="number" name="edad" id="edad"
+        class="form-control bg-light text-dark border-0"/>
+    </div><br><br>
+    <button class="btn btn-primary w-100 mt-2">Agregar cliente</button>
+</form>
+</div>
+

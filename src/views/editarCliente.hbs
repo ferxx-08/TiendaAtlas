@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center mt-5">
+<div class="card card-body p-4 rounded-3 bg-secondary text-light shadow-sm">
+    <h4 class="mb-3"> Editar Cliente</h4>
+    <form action="/clientes/{{cliente._id}}/update" method="post">
+     <div class="mb-3">
+        <label for="nombre" class="form-label">Nuevo Nombre:</label>
+        <input type="text" name="nombre" id="nombre" 
+        class="form-control bg-dark text-white" 
+        value="{{cliente.nombre}}">
+     </div>
+    <div class="mb-3">
+       <label for="apellido" class="form-label">Nuevo Apellido:</label>
+       <input type="text" name="apellido" id="apellido" 
+       class="form-control bg-dark text-white" 
+       value="{{cliente.apellido}}">  
+    </div>
+    <div class="mb-3">
+        <label for="correo" class="form-label">Correo Nuevo:</label>
+       <input type="email" name="correo" id="correo" 
+       class="form-control bg-dark text-white" 
+       value="{{cliente.correo}}">
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Nuevo numero de telefono:</label>
+       <input type="text" name="telefono" id="telefono" 
+       class="form-control bg-dark text-white" 
+       value="{{cliente.telefono}}">
+    </div>
+    <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección actualizada:</label>
+        <textarea name="direccion" id="direccion" 
+        class="form-control bg-dark text-white" rows="3" >{{cliente.direccion}}</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="edad" class="form-label">Nueva edad</label>
+        <input type="number" name="edad" id="edad" 
+        class="form-control bg-dark text-white" 
+        value="{{cliente.edad}}" required>
+    </div>
+    <button class="btn btn-primary">Actualizar Cliente</button>
+    </form>
+</div>
+</div>

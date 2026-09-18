@@ -1,5 +1,6 @@
 import express from "express";
 import indexRoutes from './routes/indexRoutes'
+import clienteRoutes from './routes/ClienteRoutes'
 import exphb from "express-handlebars";
 import path from 'path'; //modulo de node
 import morgan from "morgan";
@@ -11,6 +12,7 @@ app.engine(
     ".hbs",
     exphb({
         layoutsDir: path.join(app.get("views"), "layouts"),
+        partialsDir: path.join(app.get("views"), "partials"),
         defaultLayout: "main",
         extname: ".hbs",
     })
@@ -23,6 +25,7 @@ app.use(express.urlencoded({ extended: false}));
 
 //rutas
 app.use(indexRoutes);
+app.use(clienteRoutes);
 
 //archivos estaticos
 app.use(express.static(path.join(__dirname, "frontend")));
