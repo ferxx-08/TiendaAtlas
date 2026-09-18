@@ -3,32 +3,32 @@
 <form action="/clientes/agregar" method="post">
     <div>
         <label for="nombre">Escribe tu nombre: </label>
-        <input type="text" name="nombre" id="nombre"
+        <input type="text" name="nombre" id="nombre" class="form-control" minlength="3" maxlength="30"  required 
         class="form-control bg-light text-dark border-0"/>
     </div><br><br>
     <div>
         <label for="apellido">Escribe tu apellido: </label>
-        <input type="text" name="apellido" id="apellido"
+        <input type="text" name="apellido" id="apellido"  required 
         class="form-control bg-light text-dark border-0"/>
     </div><br><br>
     <div>
         <label for="correo">Escribe tu correo: </label>
-        <input type="email" name="correo" id="correo"
+        <input type="email" name="correo" id="correo" class="form-control"  required 
         class="form-control bg-light text-dark border-0"/>
     </div><br><br>
     <div>
         <label for="telefono">¿Cual es tu numero telefono?:</label>
-        <input type="text" name="telefono" id="telefono"
+        <input type="text" name="telefono" id="telefono" class="form-control" pattern="[0-9]{10}"  required 
         class="form-control bg-light text-dark border-0"/>
     </div><br><br>
     <div>
        <label for="direccion">Escribe tu direccion: </label>
-       <textarea name="direccion" cols="25" rows="5" placeholder="Adress"
+       <textarea name="direccion" cols="25" rows="5" placeholder="Adress"  required 
        class="form-control bg-light text-dark border-0"></textarea>
     </div><br><br>
     <div>
         <label for="edad">Escribe tu edad: </label>
-        <input type="number" name="edad" id="edad"
+        <input type="number" name="edad" id="edad" class="form-control" min="18" max="99"  required 
         class="form-control bg-light text-dark border-0"/>
     </div><br><br>
     <button class="btn btn-primary w-100 mt-2">Agregar cliente</button>
